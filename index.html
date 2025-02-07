@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Portfolio</title>
+    <style>
+        /* Reset CSS di base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Stili generali */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Navigazione */
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Sezioni principali */
+        section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Il Tuo Nome</h1>
+        <p>La tua professione o tagline</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#chi-sono">Chi Sono</a></li>
+            <li><a href="#competenze">Competenze</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="chi-sono">
+            <h2>Chi Sono</h2>
+            <p>Inserisci qui una breve biografia professionale...</p>
+        </section>
+
+        <section id="competenze">
+            <h2>Competenze</h2>
+            <div class="skills">
+                <!-- Aggiungi qui le tue competenze -->
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="projects">
+                <!-- Aggiungi qui i tuoi progetti -->
+            </div>
+        </section>
+
+        <section id="contatti">
+            <h2>Contatti</h2>
+            <div class="contact-info">
+                <!-- Aggiungi qui le tue informazioni di contatto -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Il Tuo Nome - Tutti i diritti riservati</p>
+    </footer>
+</body>
+</html>
