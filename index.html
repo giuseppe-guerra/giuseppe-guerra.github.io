@@ -3,34 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giuseppe Guerra - Software Engineer and Developer</title>
+    <title>Giuseppe Guerra - Software Enginner and Developer</title>
     <style>
-      /* Reset CSS di base */
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #34495e;
+        --text-color: #2f4f4f;
+        --accent-color: #778899;
+      }
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
 
-      /* Stili generali */
       body {
-        font-family: "Arial", sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
-        color: #333;
+        color: var(--text-color);
+        background-color: var(--secondary-color);
       }
 
-      /* Header */
       header {
-        background-color: #2c3e50;
-        color: white;
+        background-color: var(--primary-color);
         padding: 2rem;
         text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
 
-      /* Navigazione */
       nav {
-        background-color: #34495e;
+        background-color: white;
         padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
 
       nav ul {
@@ -41,34 +46,53 @@
       }
 
       nav a {
-        color: white;
         text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
       }
 
-      /* Sezioni principali */
-      section {
-        padding: 3rem 2rem;
+      nav a:hover {
+        color: var(--accent-color);
+      }
+
+      main {
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 2rem auto;
+        padding: 0 2rem;
       }
 
-      /* Footer */
+      section {
+        background-color: white;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--accent-color);
+        margin-bottom: 1rem;
+      }
+
       footer {
-        background-color: #2c3e50;
-        color: white;
+        background-color: var(--primary-color);
         text-align: center;
         padding: 1rem;
-        position: relative;
-        bottom: 0;
-        width: 100%;
+        margin-top: 2rem;
       }
 
-      /* Responsive design */
+      .contact-info {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
       @media (max-width: 768px) {
         nav ul {
           flex-direction: column;
-          text-align: center;
-          gap: 1rem;
+          align-items: center;
         }
       }
     </style>
@@ -76,48 +100,50 @@
   <body>
     <header>
       <h1>Giuseppe Guerra</h1>
-      <p>Software Engineer and Developer</p>
+      <p>Software Engineer</p>
     </header>
 
     <nav>
       <ul>
-        <li><a href="#chi-sono">Chi Sono</a></li>
-        <li><a href="#competenze">Competenze</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contatti">Contatti</a></li>
+        <li><a href="#about">Chi Sono</a></li>
+        <li><a href="#experience">Esperienza</a></li>
+        <li><a href="#skills">Competenze</a></li>
+        <li><a href="#contact">Contatti</a></li>
       </ul>
     </nav>
 
     <main>
-      <section id="chi-sono">
+      <section id="about">
         <h2>Chi Sono</h2>
-        <p>Sono un Ingegnere Informatico</p>
+        <p>Sono un Ingegnere Informatico...</p>
       </section>
 
-      <section id="competenze">
+      <section id="experience">
+        <h2>Esperienza Professionale</h2>
+        <div class="experience-item">
+          <h3>Nome Azienda</h3>
+          <p>Ruolo - Periodo</p>
+          <p>Descrizione delle responsabilità...</p>
+        </div>
+      </section>
+
+      <section id="skills">
         <h2>Competenze</h2>
-        <div class="skills">
-          <!-- Aggiungi qui le tue competenze -->
-        </div>
+        <p>Lista delle tue competenze principali...</p>
       </section>
 
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="projects">
-          <!-- Aggiungi qui i tuoi progetti -->
-        </div>
-      </section>
-
-      <section id="contatti">
+      <section id="contact">
         <h2>Contatti</h2>
         <div class="contact-info">
-          <!-- Aggiungi qui le tue informazioni di contatto -->
+          <p>Email: tua@email.com</p>
+          <p>Telefono: +39 XXX XXX XXXX</p>
+          <p>LinkedIn: /il-tuo-profilo</p>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2025 Giuseppe Guerra - Tutti i diritti riservati</p>
+      <p>© 2025 Giuseppe Guerra. Tutti i diritti riservati.</p>
     </footer>
   </body>
 </html>
